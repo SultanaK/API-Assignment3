@@ -35,7 +35,7 @@ function watchForm() {
     $('form').submit(event => {
         event.preventDefault(); 
         let breedOfDog = $('input[name="breedOfDog"]').val();
-        getDogImage(breedOfDog);
+        getDogImage(breedOfDog.toLowerCase());
     });
 }
 
